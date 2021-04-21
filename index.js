@@ -22,7 +22,7 @@ hbs.registerPartials(partialsRoute);
 
 app.get("/", (req, res) => {
   res.render("index", {
-    title: "Weather App",
+    title: "Weather App / Node JS",
   });
 });
 

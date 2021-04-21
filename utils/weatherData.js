@@ -11,14 +11,17 @@ const weatherData = (city, callback) => {
     .then((res) => {
       callback(undefined, {
         temp: res.data.main.temp /* res.data es de axios*/,
-        description: res.data.weather[0].description,
+        min: res.data.main.temp_min,
+        max: res.data.main.temp_max,
         main: res.data.weather[0].main,
         city: res.data.name,
+        description: res.data.weather[0].description,
+        feels: res.data.main.feels_like,
+        humidity: res.data.main.humidity,
       });
     })
     .catch((err) => {
       callback("Escribi bien la ciudad", err);
-      console.log(err);
     });
 };
 
