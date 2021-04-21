@@ -41,6 +41,7 @@ body {
   border: 3px solid #ffffff0e;
   backdrop-filter: blur(5px);
   box-shadow: 0 3px 45px #00000054;
+  width: 430px;
 }
 
 /*? container icon */
@@ -184,4 +185,27 @@ h2 {
 .wi-dust,
 .wi-day-sunny {
   color: yellow !important;
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 170px;
+  }
+
+  h2 {
+    font-size: 70px;
+  }
+
+  .container {
+    width: 350px;
+  }
+
+  .containerDegress {
+    margin-bottom: unset;
+  }
+
+  .max,
+  .min {
+    display: none;
+  }
 }
