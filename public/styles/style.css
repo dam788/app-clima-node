@@ -189,6 +189,11 @@ h2 {
 }
 
 @media (max-width: 450px) {
+  body {
+    background-image: none;
+    background-color: var(--background2);
+  }
+
   h1 {
     font-size: 165px;
   }
@@ -198,9 +203,13 @@ h2 {
   }
 
   .container {
-    width: 320px;
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    backdrop-filter: none;
+    box-shadow: none;
   }
 
   .containerDegress {
